@@ -1,6 +1,9 @@
 /* Header Baslayir */
 .head{
     display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
     min-height: 100px;
     width: 100%;
     justify-content: space-around;
@@ -11,14 +14,12 @@ a{
     text-decoration: none;
     color: black;
     font-family: Arial, Helvetica, sans-serif;
-    margin-top: 20px;
 }
 
     }
     .headicons{
         display: flex;
         gap: 15px;
-        margin-top: 15px;
         .iconzeng{
             height: 40px;
             width: 40px;

@@ -9,32 +9,34 @@
 }
 
 .quickactioncard {
-    padding:10px;
+    padding: 10px;
     max-width: 200px;
     background-color: rgb(255, 255, 255);
     border-radius: 20px;
 }
-.quickactioncards{
-display: grid;
-grid-template-columns: 1fr 1fr 1fr 1fr;
-gap: 10px;
+
+.quickactioncards {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 10px;
 }
 
 @media only screen and (max-width: 990px) {
-    .quickactioncards{
+    .quickactioncards {
         display: grid;
         grid-template-columns: 1fr 1fr;
-        }
-  }
-
-.home-cards{
-    display: grid;
-    grid-template-columns: 1fr 1fr ;
-    justify-items: center;
-gap:50px;
-    
+    }
 }
-.home-card{
+
+.home-cards {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-items: center;
+    gap: 30px;
+
+}
+
+.home-card {
     background-color: rgb(255, 255, 255);
     border-radius: 5px;
     padding: 10px;
@@ -43,34 +45,60 @@ gap:50px;
     gap: 10px;
 
 }
-body{
+
+body {
     background-color: #c7dffc;
 }
-.all{
+
+.all {
     padding: 20px;
     display: flex;
     flex-direction: column;
     gap: 35px;
 }
-.quickstationsection{
+
+.quickstationsection {
     display: flex;
     flex-direction: column;
     gap: 20px;
 }
-.adminicon{
+
+.adminicon {
     max-width: 30px;
-    width: 100%;;
+    width: 100%;
 }
-.allitem{
+
+.allitem {
     display: flex;
     align-items: center;
     gap: 10px;
 }
-.dashboard-left{
+
+.dashboard-left {
     display: flex;
     gap: 10px;
     align-items: center;
-    p{
-        color:white
+
+    p {
+        color: white
     }
+}
+
+.dashboard-section {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.dashboard-icon {
+    max-width: 60px;
+    width: 100%;
+}
+
+.editprofile {
+    background-color: gold;
+    border: 1px solid white;
+    border-radius: 5px;
+    padding: 5px 15px;
+
 }

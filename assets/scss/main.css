@@ -1,10 +1,11 @@
+@import url("https://fonts.googleapis.com/css?family=Lato|Roboto+Slab");
 * {
   margin: 0;
+  font-family: "Lato", sans-serif;
 }
 
 img {
   width: 100%;
-  height: 100%;
 }
 
 .dashboard {
@@ -39,7 +40,7 @@ img {
   display: grid;
   grid-template-columns: 1fr 1fr;
   justify-items: center;
-  gap: 50px;
+  gap: 30px;
 }
 
 .home-card {
@@ -86,6 +87,24 @@ body {
 }
 .dashboard-left p {
   color: white;
+}
+
+.dashboard-section {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.dashboard-icon {
+  max-width: 60px;
+  width: 100%;
+}
+
+.editprofile {
+  background-color: gold;
+  border: 1px solid white;
+  border-radius: 5px;
+  padding: 5px 15px;
 }
 
 .all-sidebar {
@@ -268,6 +287,9 @@ body {
 /* Header Baslayir */
 .head {
   display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
   min-height: 100px;
   width: 100%;
   justify-content: space-around;
@@ -280,12 +302,10 @@ body {
   text-decoration: none;
   color: black;
   font-family: Arial, Helvetica, sans-serif;
-  margin-top: 20px;
 }
 .head .headicons {
   display: flex;
   gap: 15px;
-  margin-top: 15px;
 }
 .head .headicons .iconzeng {
   height: 40px;
@@ -439,4 +459,637 @@ body {
 }
 .adminindex .container .employeetable .employeetable__employees .employeetable__employees__buttons .removebtn:hover {
   background-color: rgb(134, 22, 22);
+}
+
+* {
+  position: relative;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.centered {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+h1 {
+  font-size: 30px;
+}
+
+.message {
+  display: inline-block;
+  line-height: 1.2;
+  transition: line-height 0.2s, width 0.2s;
+  overflow: hidden;
+}
+
+.message,
+.hidden {
+  font-family: "Roboto Slab", serif;
+  font-size: 18px;
+}
+
+.hidden {
+  color: #FFF;
+}
+
+.loginmain .logincontainer {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  position: relative;
+}
+.loginmain .logincontainer .blueshadeforcontainer {
+  display: none;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  background-color: rgba(25, 25, 112, 0.8);
+}
+.loginmain .logincontainer .login__content {
+  width: 40%;
+  padding: 120px 120px 100px 70px;
+  gap: 20px;
+  display: flex;
+  flex-direction: column;
+}
+.loginmain .logincontainer .login__content .login__content__heading {
+  color: #253D90;
+  font-size: 56px;
+  font-weight: bold;
+}
+.loginmain .logincontainer .login__content .login__content__account {
+  color: #969696;
+  font-size: 30px;
+  font-weight: bold;
+}
+.loginmain .logincontainer .login__content .login__content__form {
+  display: flex;
+  flex-direction: column;
+}
+.loginmain .logincontainer .login__content .login__content__form .emaillabel {
+  font-size: 20px;
+  font-weight: bold;
+  color: #253D90;
+  margin-bottom: 10px;
+}
+.loginmain .logincontainer .login__content .login__content__form .emailinp {
+  border: 1px solid rgba(0, 0, 0, 0.2509803922);
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  height: 30px;
+  margin-bottom: 30px;
+}
+.loginmain .logincontainer .login__content .login__content__form .passwordlabel {
+  margin-bottom: 10px;
+  font-size: 20px;
+  font-weight: bold;
+  color: #253D90;
+}
+.loginmain .logincontainer .login__content .login__content__form .passwordinp {
+  border: 1px solid rgba(0, 0, 0, 0.2509803922);
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  height: 30px;
+  font-weight: bold;
+}
+.loginmain .logincontainer .login__content .login__content__passtools {
+  display: flex;
+  justify-content: space-between;
+}
+.loginmain .logincontainer .login__content .login__content__passtools .rememberme {
+  display: flex;
+  align-items: center;
+}
+.loginmain .logincontainer .login__content .login__content__passtools .rememberme input {
+  width: 25px;
+  height: 25px;
+  margin-right: 8px;
+}
+.loginmain .logincontainer .login__content .login__content__passtools .resetpass {
+  font-size: 20px;
+  color: #253D90;
+}
+.loginmain .logincontainer .login__content .login__content__signin .signinbtn {
+  cursor: pointer;
+  width: 100%;
+  height: 40px;
+  background-color: #253D90;
+  color: white;
+  border-radius: 6px;
+  border: none;
+  transition: 0.4s all;
+}
+.loginmain .logincontainer .login__content .login__content__signin .signinbtn:hover {
+  background-color: #4259ab;
+}
+.loginmain .logincontainer .login__content .login__content__passtoregister {
+  text-align: center;
+}
+.loginmain .logincontainer .login__content .login__content__passtoregister a {
+  text-decoration: none;
+  color: #253D90;
+  font-weight: bold;
+}
+.loginmain .logincontainer .login__img {
+  width: 60%;
+  position: relative;
+  background-image: url("../img/login-bg.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+.loginmain .logincontainer .login__img .blueshade {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  background-color: rgba(25, 25, 112, 0.8);
+}
+.loginmain .logincontainer .login__img .login__img__manage {
+  position: absolute;
+  top: 55%;
+  left: 8%;
+  font-weight: bold;
+  font-size: 50px;
+  max-width: 80%;
+  color: white;
+}
+.loginmain .logincontainer .login__img .login__img__manage span {
+  color: #FFC20E;
+}
+
+@media only screen and (max-width: 1340px) {
+  .loginmain .logincontainer .login__content {
+    padding: 150px 90px 100px 50px;
+  }
+  .loginmain .logincontainer .login__img .login__img__manage {
+    font-size: 45px;
+    max-width: 90%;
+  }
+}
+@media only screen and (max-width: 1200px) {
+  .loginmain .logincontainer .login__content {
+    width: 40%;
+    padding: 80px 60px 80px 40px;
+  }
+  .loginmain .logincontainer .login__img {
+    width: 60%;
+  }
+  .loginmain .logincontainer .login__img .login__img__manage {
+    font-size: 45px;
+    max-width: 90%;
+  }
+}
+@media only screen and (max-width: 990px) {
+  .loginmain .logincontainer {
+    position: relative;
+    background-image: url("../img/login-bg.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+  }
+  .loginmain .logincontainer .blueshadeforcontainer {
+    display: block;
+  }
+  .loginmain .logincontainer .login__content {
+    gap: 10px;
+    border-radius: 10px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    position: absolute;
+    z-index: 999;
+    background-color: white;
+    width: 60%;
+    padding: 30px;
+  }
+  .loginmain .logincontainer .login__content .login__content__heading {
+    font-size: 44px;
+  }
+  .loginmain .logincontainer .login__content .login__content__account {
+    font-size: 25px;
+  }
+  .loginmain .logincontainer .login__content .login__content__form .emaillabel {
+    font-size: 16px;
+    margin-bottom: 6px;
+  }
+  .loginmain .logincontainer .login__content .login__content__form .emailinp {
+    height: 30px;
+    margin-bottom: 15px;
+  }
+  .loginmain .logincontainer .login__content .login__content__form .passwordlabel {
+    margin-bottom: 6px;
+    font-size: 16px;
+  }
+  .loginmain .logincontainer .login__content .login__content__form .passwordinp {
+    height: 30px;
+  }
+  .loginmain .logincontainer .login__content .login__content__passtools {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .loginmain .logincontainer .login__content .login__content__passtools .rememberme {
+    display: flex;
+    align-items: center;
+  }
+  .loginmain .logincontainer .login__content .login__content__passtools .rememberme input {
+    width: 25px;
+    height: 25px;
+    margin-right: 8px;
+  }
+  .loginmain .logincontainer .login__content .login__content__passtools .resetpass {
+    font-size: 16px;
+    color: #253D90;
+  }
+  .loginmain .logincontainer .login__content .login__content__passtoregister {
+    text-align: center;
+    font-size: 15px;
+  }
+  .loginmain .logincontainer .login__content .login__content__passtoregister a {
+    text-decoration: none;
+    color: #253D90;
+    font-weight: bold;
+  }
+  .loginmain .logincontainer .login__img {
+    display: none;
+  }
+}
+@media only screen and (max-width: 780px) {
+  .loginmain .logincontainer .login__content {
+    gap: 7px;
+    border-radius: 10px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    position: absolute;
+    z-index: 999;
+    background-color: white;
+    width: 70%;
+    padding: 20px 30px;
+  }
+  .loginmain .logincontainer .login__content .login__content__heading {
+    font-size: 38px;
+  }
+  .loginmain .logincontainer .login__content .login__content__account {
+    font-size: 22px;
+  }
+  .loginmain .logincontainer .login__content .login__content__form .emaillabel {
+    font-size: 14px;
+    margin-bottom: 6px;
+  }
+  .loginmain .logincontainer .login__content .login__content__form .emailinp {
+    height: 20px;
+    margin-bottom: 10px;
+  }
+  .loginmain .logincontainer .login__content .login__content__form .passwordlabel {
+    margin-bottom: 6px;
+    font-size: 14px;
+  }
+  .loginmain .logincontainer .login__content .login__content__form .passwordinp {
+    height: 20px;
+  }
+  .loginmain .logincontainer .login__content .login__content__passtools {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .loginmain .logincontainer .login__content .login__content__passtools .rememberme {
+    display: flex;
+    align-items: center;
+    font-size: 14px;
+  }
+  .loginmain .logincontainer .login__content .login__content__passtools .rememberme input {
+    width: 18px;
+    height: 18px;
+    margin-right: 8px;
+  }
+  .loginmain .logincontainer .login__content .login__content__passtools .resetpass {
+    font-size: 14px;
+    color: #253D90;
+  }
+  .loginmain .logincontainer .login__content .login__content__passtoregister {
+    text-align: center;
+    font-size: 13px;
+  }
+  .loginmain .logincontainer .login__content .login__content__passtoregister a {
+    text-decoration: none;
+    color: #253D90;
+    font-weight: bold;
+  }
+}
+@media only screen and (max-width: 600px) {
+  .loginmain .logincontainer .login__content {
+    width: 70%;
+  }
+}
+@media only screen and (max-width: 440px) {
+  .loginmain .logincontainer .login__content {
+    width: 70%;
+  }
+  .loginmain .logincontainer .login__content .login__content__heading {
+    font-size: 32px;
+  }
+  .loginmain .logincontainer .login__content .login__content__account {
+    font-size: 20px;
+  }
+  .loginmain .logincontainer .login__content .login__content__form .emaillabel {
+    font-size: 13px;
+    margin-bottom: 6px;
+  }
+  .loginmain .logincontainer .login__content .login__content__form .emailinp {
+    height: 16px;
+    margin-bottom: 10px;
+  }
+  .loginmain .logincontainer .login__content .login__content__form .passwordlabel {
+    margin-bottom: 6px;
+    font-size: 13px;
+  }
+  .loginmain .logincontainer .login__content .login__content__form .passwordinp {
+    height: 16px;
+  }
+  .loginmain .logincontainer .login__content .login__content__passtools {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .loginmain .logincontainer .login__content .login__content__passtools .rememberme {
+    display: flex;
+    align-items: center;
+    font-size: 12px;
+  }
+  .loginmain .logincontainer .login__content .login__content__passtools .rememberme input {
+    width: 18px;
+    height: 18px;
+    margin-right: 8px;
+  }
+  .loginmain .logincontainer .login__content .login__content__passtools .resetpass {
+    font-size: 14px;
+    color: #253D90;
+  }
+  .loginmain .logincontainer .login__content .login__content__passtoregister {
+    text-align: center;
+    font-size: 13px;
+  }
+  .loginmain .logincontainer .login__content .login__content__passtoregister a {
+    text-decoration: none;
+    color: #253D90;
+    font-weight: bold;
+  }
+}
+.register-container {
+  height: 100vh;
+  display: flex;
+}
+.register-container a {
+  text-decoration: none;
+}
+.register-container .head-text {
+  font-size: 56px;
+  font-weight: bold;
+  color: #253D90;
+}
+.register-container .left {
+  position: relative;
+  width: 40%;
+  height: 100%;
+  background-image: url("../img/register_background.png");
+  background-size: cover;
+  background-position: center;
+}
+.register-container .left .overlay {
+  height: 100%;
+  position: absolute;
+  background-color: rgba(25, 25, 112, 0.8);
+}
+.register-container .left .overlay #logo {
+  padding: 30px 20px;
+  width: 200px;
+}
+.register-container .left .overlay .register-content {
+  margin: 60px auto 0;
+  width: 80%;
+  color: white;
+}
+.register-container .left .overlay .register-content .head-text {
+  width: 100%;
+  color: white;
+  margin-bottom: 40px;
+}
+.register-container .right {
+  width: 60%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.register-container .right p {
+  margin-bottom: 30px;
+}
+.register-container .right .p-text {
+  display: flex;
+  gap: 10px;
+}
+.register-container .right .p-text p {
+  color: black;
+}
+.register-container .right form {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+.register-container .right form label {
+  color: #253D90;
+}
+.register-container .right form .check-box {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+.register-container .right form .check-box label {
+  color: black;
+}
+.register-container .right form .check-box input {
+  width: 25px;
+  height: 25px;
+}
+.register-container .right form button {
+  width: 30%;
+  height: 50px;
+  font-size: 18px;
+  color: white;
+  background-color: #253D90;
+  border-radius: 6px;
+  cursor: pointer;
+}
+.register-container .right form .input-boxs {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+.register-container .right form .input-boxs .input-box {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.register-container .right form .input-boxs .input-box input {
+  max-width: 200px;
+  padding: 4px 8px;
+  height: 30px;
+  outline: none;
+  border: 1px solid rgba(0, 0, 0, 0.2509803922);
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+@media only screen and (max-width: 1200px) {
+  .register-container {
+    justify-content: center;
+  }
+  .left {
+    display: none;
+  }
+  .right {
+    width: 100% !important;
+    background-size: cover;
+    background-position: center;
+  }
+  .right .head-text {
+    font-size: 24px;
+    margin-bottom: 0;
+  }
+  .right p {
+    margin-bottom: 0;
+  }
+  .right .p-text {
+    font-size: 12px;
+    gap: 3px;
+  }
+  .right form {
+    width: 100% !important;
+    gap: 5px;
+  }
+  .right form .check-box {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+  }
+  .right form .check-box label {
+    font-size: 12px;
+    color: black;
+  }
+  .right form .check-box input {
+    width: 15px;
+    height: 5px;
+  }
+  .right form button {
+    width: 100% !important;
+    height: 50px !important;
+    font-size: 12px;
+    color: white;
+    background-color: #253D90;
+    border-radius: 6px;
+    cursor: pointer;
+  }
+  .right form .input-boxs {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+  }
+  .right form .input-boxs .input-box {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+  }
+  .right form .input-boxs .input-box label {
+    font-size: 12px;
+    color: #253D90;
+  }
+  .right form .input-boxs .input-box input {
+    padding: 2px 4px;
+    outline: none;
+    border: 1px solid rgba(0, 0, 0, 0.2509803922);
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  }
+}
+.update-profile-main {
+  padding: 30px;
+  background-color: #E3EDF9;
+}
+.update-profile-main .dashboard-path {
+  padding: 10px 20px;
+  margin-bottom: 50px;
+  background-color: white;
+}
+.update-profile-main .bottom {
+  display: flex;
+  justify-content: space-between;
+}
+.update-profile-main .bottom .chooses {
+  width: 30%;
+  padding: 20px;
+  background-color: white;
+  border: 1px solid black;
+  border-radius: 10px;
+}
+.update-profile-main .bottom .chooses ul {
+  list-style: none;
+}
+.update-profile-main .bottom .chooses ul li {
+  font-size: 18px;
+  font-weight: 600;
+  text-align: center;
+  margin: 10px;
+  background-color: #E3EDF9;
+  padding: 20px;
+  border-radius: 10px;
+  cursor: pointer;
+}
+.update-profile-main .bottom .chooses ul li:first-child {
+  background-color: orange;
+}
+.update-profile-main .bottom .chooses-details {
+  width: 65%;
+  background-color: white;
+  padding: 30px;
+  border: 1px solid black;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.update-profile-main .bottom .chooses-details img {
+  width: 100px;
+}
+.update-profile-main .bottom .chooses-details .top {
+  max-width: 40%;
+  display: flex;
+  justify-content: space-between;
+  gap: 60px;
+}
+.update-profile-main .bottom .chooses-details .top .edit-btn img {
+  width: 40px;
+}
+.update-profile-main .bottom .chooses-details .content {
+  font-size: 18px;
+  margin-top: 60px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 30px;
+}
+.update-profile-main .bottom .chooses-details .content .p2 {
+  font-weight: bold;
+  margin-top: 10px;
+}
+.update-profile-main .bottom .chooses-details .content .content-div {
+  padding: 10px;
+  text-align: center;
+}
+.update-profile-main .bottom .chooses-details .content .job {
+  display: flex;
+  gap: 20px;
 }/*# sourceMappingURL=main.css.map */

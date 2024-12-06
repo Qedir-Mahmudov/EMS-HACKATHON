@@ -1,0 +1,94 @@
+.update-profile-main {
+    padding: 30px;
+    background-color: #E3EDF9;
+
+    .dashboard-path{
+        padding: 10px 20px;
+        margin-bottom: 50px;
+        background-color: white;
+    }
+
+    .bottom {
+        display: flex;
+        justify-content: space-between;
+
+        .chooses {
+            width: 30%;
+            padding: 20px;
+            background-color: white;
+            border: 1px solid black;
+            border-radius: 10px;
+
+            ul {
+                list-style: none;
+
+                li{
+                    font-size: 18px;
+                    font-weight: 600;
+                    text-align: center;
+                    margin: 10px;
+                    background-color: #E3EDF9;
+                    padding: 20px;
+                    border-radius: 10px;
+                    cursor: pointer;
+                }
+
+                li:first-child{
+                    background-color: orange;
+                }
+            }
+        }
+
+        .chooses-details {
+            width: 65%;
+            background-color: white;
+            padding: 30px;
+            border: 1px solid black;
+            border-radius: 10px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+
+            img {
+                width: 100px;
+            }
+
+            .top{
+                max-width: 40%;
+                display: flex;
+                justify-content: space-between;
+                gap: 60px;
+
+                .edit-btn{
+                    img{
+                        width: 40px;
+                    }
+                }
+            }
+
+            .content{
+                font-size: 18px;
+                margin-top: 60px;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                gap: 30px;
+
+                .p2{
+                    font-weight: bold;
+                    margin-top: 10px;
+                }
+
+                .content-div{
+                    padding: 10px;
+                    text-align: center;
+                }
+
+                .job{
+                    display: flex;
+                    gap: 20px;
+                }
+            }
+        }
+    }
+}
