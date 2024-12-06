@@ -1,0 +1,98 @@
+
+
+
+
+#inputsection{
+    width: 100%;
+    .conta{
+        justify-content: center;
+        min-height: 50vh;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: left;
+        background-color: aliceblue;
+        gap: 20px;
+    
+            .firstinps{
+                display: flex;
+                flex-direction: column;
+                gap: 20px;
+               .title{
+                max-width: 250px;
+                width: 100%;
+                height: 30px;
+                border: 1px solid gold;
+                 border-radius:3px ;
+               }
+               .descrip{
+                max-width: 250px;
+                width: 100%;
+                height: 30px;
+                border: 1px solid gold;
+                 border-radius:3px ;
+               }
+               .employe{
+                max-width: 250px;
+                width: 100%;
+                height: 30px;
+                border: 1px solid gold;
+                 border-radius:3px ;
+               }
+            }
+        }
+    .secondinps{
+        display: flex;
+        gap: 20px;
+        #birthday{
+            height: 30px;
+            width: 170px;
+            border: 1px solid gold;
+            border-radius: 3px;
+        }
+    }
+        .secbuttons{
+            display: flex;
+            gap: 20px;
+            margin-top: 20px;
+            .submit{
+                border: 1px solid rgb(0, 255, 0);
+                border-radius: 4px;
+                height: 40px;
+                width: 250px;
+                background-color: green;
+                color: aliceblue;
+            }
+            .addtarget{
+                border: 2px solid gold;
+                border-radius: 4px;
+                height: 40px;
+              
+                width: 300px;
+                background-color: white;
+               
+            }
+        }
+    }
+    /* Input section responsivlik basliyir */
+    @media only screen and (max-width: 600px) {
+        .conta{
+            margin-left: 20px;
+            .secondinps{
+                display: flex;
+                flex-direction: column;
+            }
+            .secbuttons{
+                display: flex;
+                flex-direction: column;
+                
+            }
+            .submit{
+                width: 300px;
+            }
+        }
+       }
+    /* Bitir */
+    
+    
+    

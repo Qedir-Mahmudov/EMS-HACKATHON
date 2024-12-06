@@ -1,0 +1,87 @@
+/* Header Baslayir */
+.head{
+    display: flex;
+    min-height: 100px;
+    width: 100%;
+    justify-content: space-around;
+    .headwords{
+        display: flex;
+gap: 20px;
+a{
+    text-decoration: none;
+    color: black;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-top: 20px;
+}
+
+    }
+    .headicons{
+        display: flex;
+        gap: 15px;
+        margin-top: 15px;
+        .iconzeng{
+            height: 40px;
+            width: 40px;
+            background-color: rgb(0, 4, 255);
+            border: 1px solid none ;
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            box-shadow: 1px 1px 3px 1px #888888;
+            .zengicon{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+        }
+        .iconmektub{
+            height: 40px;
+            width: 40px;
+            background-color: rgb(14, 148, 2);
+            border: 1px solid none ;
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            box-shadow: 1px 1px 3px 1px #888888;
+            .mektubicon{
+                display: flex;
+                justify-content: center;
+                align-items: center;   
+            }
+        }
+        .iconadmin{
+            height: 40px;
+            width: 40px;
+            background-color: rgb(255, 238, 0);
+            border: 1px solid none ;
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            box-shadow: 1px 1px 3px 1px #888888;
+            .manicon{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+        }
+    }
+}
+/* Headerin Responsivi baslayir */
+@media only screen and (max-width: 600px) {
+   .head{
+     display: flex;
+    flex-direction: column;
+    justify-content: center; 
+   }
+   
+   .headicons{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+   }
+  }
+ /*  Header responsivlik bitir */
+
+
+
