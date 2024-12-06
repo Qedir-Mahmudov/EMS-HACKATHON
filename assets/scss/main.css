@@ -79,6 +79,15 @@ body {
   gap: 10px;
 }
 
+.dashboard-left {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+.dashboard-left p {
+  color: white;
+}
+
 .all-sidebar {
   background-color: #0A152F;
   max-width: 250px;
@@ -142,6 +151,7 @@ body {
 
 .alladminpanel {
   display: flex;
+  height: 551px;
 }
 
 .sidebarnav {
@@ -156,6 +166,15 @@ body {
 .navbarimg {
   max-width: 60px;
   width: 100%;
+}
+
+.blank {
+  padding: 10px;
+  width: 100%;
+}
+
+.blankall {
+  background-color: white;
 }
 
 #inputsection {
@@ -327,4 +346,97 @@ body {
     align-items: center;
   }
 }
-/*  Header responsivlik bitir *//*# sourceMappingURL=main.css.map */
+/*  Header responsivlik bitir */
+.adminindex .container .employeetable {
+  background-color: rgb(161, 209, 193);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  padding: 50px 0;
+}
+.adminindex .container .employeetable .tableheading {
+  max-width: 80%;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.adminindex .container .employeetable .tableheading h1 {
+  font-size: 50px;
+  font-weight: bold;
+  text-shadow: 4px 5px 6px rgba(149, 130, 206, 0.62);
+}
+.adminindex .container .employeetable .tableheading .createbtn {
+  padding: 8px 20px;
+  border-radius: 5px;
+  border: none;
+  color: white;
+  background-color: rgb(204, 204, 90);
+  cursor: pointer;
+  transition: 0.4s all;
+}
+.adminindex .container .employeetable .tableheading .createbtn:hover {
+  background-color: rgb(120, 120, 46);
+}
+.adminindex .container .employeetable .employeetable__employees {
+  max-width: 80%;
+  width: 100%;
+  background-color: white;
+  padding: 20px 30px;
+  border-radius: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.adminindex .container .employeetable .employeetable__employees .employeetable__employees__datas {
+  display: flex;
+  flex-direction: column;
+}
+.adminindex .container .employeetable .employeetable__employees .employeetable__employees__datas .employee__name {
+  font-size: 18px;
+  font-weight: bold;
+}
+.adminindex .container .employeetable .employeetable__employees .employeetable__employees__datas .employee__salary {
+  font-size: 16px;
+  color: #4b4141;
+}
+.adminindex .container .employeetable .employeetable__employees .employeetable__employees__buttons {
+  gap: 5px;
+}
+.adminindex .container .employeetable .employeetable__employees .employeetable__employees__buttons .detailbtn {
+  padding: 8px 20px;
+  border-radius: 5px;
+  color: white;
+  background-color: rgb(87, 182, 203);
+  border: none;
+  cursor: pointer;
+  transition: 0.4s all;
+}
+.adminindex .container .employeetable .employeetable__employees .employeetable__employees__buttons .detailbtn:hover {
+  background-color: rgb(52, 107, 135);
+}
+.adminindex .container .employeetable .employeetable__employees .employeetable__employees__buttons .updatebtn {
+  padding: 8px 20px;
+  border-radius: 5px;
+  color: white;
+  background-color: rgb(19, 126, 58);
+  border: none;
+  cursor: pointer;
+  transition: 0.4s all;
+}
+.adminindex .container .employeetable .employeetable__employees .employeetable__employees__buttons .updatebtn:hover {
+  background-color: rgb(16, 89, 41);
+}
+.adminindex .container .employeetable .employeetable__employees .employeetable__employees__buttons .removebtn {
+  padding: 8px 20px;
+  border-radius: 5px;
+  color: white;
+  background-color: rgb(175, 28, 28);
+  border: none;
+  cursor: pointer;
+  transition: 0.4s all;
+}
+.adminindex .container .employeetable .employeetable__employees .employeetable__employees__buttons .removebtn:hover {
+  background-color: rgb(134, 22, 22);
+}/*# sourceMappingURL=main.css.map */

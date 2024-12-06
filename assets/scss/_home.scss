@@ -66,3 +66,11 @@ body{
     align-items: center;
     gap: 10px;
 }
+.dashboard-left{
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    p{
+        color:white
+    }
+}
