@@ -1,0 +1,68 @@
+.dashboard {
+    background-color: blue;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+
+}
+
+.quickactioncard {
+    padding:10px;
+    max-width: 200px;
+    background-color: rgb(255, 255, 255);
+    border-radius: 20px;
+}
+.quickactioncards{
+display: grid;
+grid-template-columns: 1fr 1fr 1fr 1fr;
+gap: 10px;
+}
+
+@media only screen and (max-width: 990px) {
+    .quickactioncards{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        }
+  }
+
+.home-cards{
+    display: grid;
+    grid-template-columns: 1fr 1fr ;
+    justify-items: center;
+gap:50px;
+    
+}
+.home-card{
+    background-color: rgb(255, 255, 255);
+    border-radius: 5px;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+
+}
+body{
+    background-color: #c7dffc;
+}
+.all{
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 35px;
+}
+.quickstationsection{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.adminicon{
+    max-width: 30px;
+    width: 100%;;
+}
+.allitem{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}

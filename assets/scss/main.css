@@ -1,3 +1,159 @@
 * {
   margin: 0;
+}
+
+img {
+  width: 100%;
+  height: 100%;
+}
+
+.dashboard {
+  background-color: blue;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px;
+}
+
+.quickactioncard {
+  padding: 10px;
+  max-width: 200px;
+  background-color: rgb(255, 255, 255);
+  border-radius: 20px;
+}
+
+.quickactioncards {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  gap: 10px;
+}
+
+@media only screen and (max-width: 990px) {
+  .quickactioncards {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+}
+.home-cards {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  justify-items: center;
+  gap: 50px;
+}
+
+.home-card {
+  background-color: rgb(255, 255, 255);
+  border-radius: 5px;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+body {
+  background-color: #c7dffc;
+}
+
+.all {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 35px;
+}
+
+.quickstationsection {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.adminicon {
+  max-width: 30px;
+  width: 100%;
+}
+
+.allitem {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.all-sidebar {
+  background-color: #0A152F;
+  max-width: 250px;
+  width: 100%;
+}
+
+.line {
+  height: 1px;
+  width: 100%;
+  background-color: rgb(130, 130, 130);
+}
+
+.alll {
+  padding: 20px;
+}
+
+.feautures {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  padding: 20px;
+  flex-direction: column;
+}
+.feautures p {
+  color: white;
+}
+.feautures a {
+  color: white;
+}
+
+.allfeatures {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.logout {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.lgtbtn {
+  background-color: red;
+  border: 1px solid rgb(255, 255, 255);
+  border-radius: 2px;
+  padding: 5px;
+}
+.lgtbtn p {
+  color: white;
+}
+
+.alll p {
+  color: white;
+}
+.alll h1 {
+  color: white;
+}
+
+.alladminpanel {
+  display: flex;
+}
+
+.sidebarnav {
+  padding: 10px;
+}
+
+.navbaricon {
+  display: flex;
+  gap: 15px;
+}
+
+.navbarimg {
+  max-width: 60px;
+  width: 100%;
 }/*# sourceMappingURL=main.css.map */

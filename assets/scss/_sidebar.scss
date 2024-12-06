@@ -1,0 +1,71 @@
+
+.all-sidebar{
+    background-color:#0A152F;
+    max-width: 250px;
+    width: 100%;
+}
+.line{
+    height: 1px;
+    width: 100%;
+    background-color: rgb(130, 130, 130);
+}
+.alll{
+    padding: 20px;
+}
+.feautures{
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+    padding: 20px;
+    flex-direction: column;
+    p{
+        color: white;
+    }
+    a{
+        color: white;
+    }
+}
+.allfeatures{
+display: flex;
+flex-direction: column;
+gap: 5px;
+}
+.logout{
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    border-radius: 10px;
+}
+.lgtbtn{
+    background-color: red;
+    border: 1px solid rgb(255, 255, 255);
+    border-radius: 2px;
+   padding: 5px;
+    p{
+        color: white;
+    }
+}
+.alll{
+p{
+    color: white;
+}
+h1{
+    color: white;
+}
+}
+.alladminpanel{
+    display: flex;
+}
+.sidebarnav{
+    padding: 10px;
+}
+.navbaricon{
+    display: flex;
+    gap: 15px;
+}
+.navbarimg{
+    max-width:60px;
+    width: 100%;
+}
